@@ -1,3 +1,9 @@
+const toggle = document.querySelector('input')
+  .addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    document.body.style.transition = 'all 0.5s';
+  });
+
 document.body.onload = function () {
   let rtClock = new Date();
   let jam = rtClock.getHours();
